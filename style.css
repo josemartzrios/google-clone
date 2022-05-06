@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+html{
+    font-size: 62.5%;
+} 
+
+html, body{
+    min-height: 100%;
+} 
+
+body{
+    font-size: 1.7rem;
+} 
+
+header{
+    width: 100%;
+    height: 6.0vh;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 25.0rem;
+    /* que tome la altura del padre (HEADER) */
+    height: auto; 
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-top: 1.0rem;
+}
+
+nav .nav-right-section a{
+    margin-right: 1.0rem;
+    color: black;
+    text-decoration: none;
+}
+
+/* CONTAINER */
+
+main{
+    margin-top: 15.0rem;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 53.0rem;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+}
+
+main .main-logo img{
+    width: 100%;
+}
+
+main .main-input{
+    width: 53.0rem;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+
+main .main-input-container{
+    width: 52.5rem;
+    border-radius: 10.0rem;
+    border: 1px solid rgb(174, 172, 172);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    width: 45.0rem;
+    height: 4.0rem;
+    border: none;
+    outline: none;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+main .main-input .search-icon{
+    background-image: url('https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_960_720.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+main .main-input .micro-icon{
+    background-image: url('https://seeklogo.com/images/G/google-mic-logo-33133A4F5F-seeklogo.com.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+}
+
+main .main-buttons{
+    width: 53.0rem;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    height: 3.6rem;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 1.4rem;
+    color: #5f6368;
+    padding: 0 15px;
+    cursor: pointer;
+    margin-right: 2.0rem;
+}
+
+main .main-buttons button:hover{
+    border: 1px solid black;
+    color: black;
+    box-shadow: 0 1px 1px #000001;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 5.0rem;
+    /* para que el footer se queda fijo en la pagina usa position absolute y bottom 0*/
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #e2e1e1;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #4d5053;
+    padding: 0 1.5rem;
+}
